@@ -1,15 +1,15 @@
 #### Parameters
 
-$keyvaultname = "kvextakscluster01"
-$location = "uksouth"
-$keyvaultrg = "kv-aks-rg01"
-$sshkeysecret = "akssshpubkey"
-$spnclientid = "07b176fd-b6d1-4de7-8ff4-9b8cf3eaae7e"
-$clientidkvsecretname = "aks-spn"
-$spnclientsecret = "koB8Q~ALX9lN-D-RhoGr-Ntb0b0SeQhWxnjNPcbE"
-$spnkvsecretname = "spn-secret"
-$spobjectID = "08eb713c-9c31-4aba-9a16-ba48e0b9b095"
-$userobjectid = "1fe255d2-d546-475f-8ecb-b3af25931371"
+# $keyvaultname = "kvextakscluster01"
+# $location = "uksouth"
+# $keyvaultrg = "kv-aks-rg01"
+# $sshkeysecret = "akssshpubkey"
+# $spnclientid = "******************"
+# $clientidkvsecretname = "aks-spn"
+# $spnclientsecret = "*********************"
+# $spnkvsecretname = "spn-secret"
+# $spobjectID = "*****************************"
+# $userobjectid = "***************************"
 
 
 # #### Create Key Vault
