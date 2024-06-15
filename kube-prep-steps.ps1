@@ -1,18 +1,18 @@
 #### Parameters
 
-$keyvaultname = "xxxxx"
-$location = "xxxxx"
-$keyvaultrg = "xxxxxx"
-$sshkeysecret = "xxxxx"
-$spnclientid = "xxxxxx"
-$clientidkvsecretname = "xxxxxx"
-$spnclientsecret = "xxxxxx"
-$spnkvsecretname = "xxxxx"
-$spobjectID = "xxxxx"
-$userobjectid = "xxxxx"
+$keyvaultname = "kvextakscluster01"
+$location = "uksouth"
+$keyvaultrg = "kv-aks-rg01"
+$sshkeysecret = "akssshpubkey"
+$spnclientid = "07b176fd-b6d1-4de7-8ff4-9b8cf3eaae7e"
+$clientidkvsecretname = "aks-spn"
+$spnclientsecret = "koB8Q~ALX9lN-D-RhoGr-Ntb0b0SeQhWxnjNPcbE"
+$spnkvsecretname = "spn-secret"
+$spobjectID = "08eb713c-9c31-4aba-9a16-ba48e0b9b095"
+$userobjectid = "1fe255d2-d546-475f-8ecb-b3af25931371"
 
 
-#### Create Key Vault
+# #### Create Key Vault
 
 New-AzResourceGroup -Name $keyvaultrg -Location $location
 
@@ -50,4 +50,4 @@ Set-AzKeyVaultSecret -VaultName $keyvaultname -Name $spnkvsecretname -SecretValu
 
 #### Provide Keyvault secret access to SPN using Keyvault access policy
 
-Set-AzKeyVaultAccessPolicy -VaultName $keyvaultname -ServicePrincipalName $spobjectID -PermissionsToSecrets Get,Set
+Set-AzKeyVaultAccessPolicy -VaultName $keyvaultname -ServicePrincipalName $spnclientid -PermissionsToSecrets Get,Set
