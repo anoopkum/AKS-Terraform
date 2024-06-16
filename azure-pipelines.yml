@@ -19,5 +19,5 @@ steps:
   displayName: Terraform Plan
   inputs:
     command: 'plan'
-    environmentServiceName: 'youtube-app-service-connection'
+    environmentServiceName: 'aks-spn'
     allowTelemetryCollection: false
