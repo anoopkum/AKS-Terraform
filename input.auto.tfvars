@@ -14,7 +14,7 @@ keyvault_rg = "kv-aks-rg01"
 
 keyvault_name = "kvextakscluster01"
 
-azure_region = "australiaeast"
+azure_region = "uksouth"
 
 resource_group = "aksdemocluster-rg"
 
