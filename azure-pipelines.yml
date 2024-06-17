@@ -5,8 +5,10 @@
 
 trigger: none
 
+
 pool: default
   # vmImage: ubuntu-latest
+
 
 steps:
 - task: TerraformInstaller@2
