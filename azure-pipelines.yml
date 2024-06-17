@@ -5,10 +5,15 @@
 
 trigger: none
 
-pool:
-  vmImage: self-host-pool
+
+pool: default
+  # vmImage: ubuntu-latest
+
 
 steps:
+- task: TerraformInstaller@2
+  inputs:
+    terraformVersion: 'latest'
 - task: TerraformCLI@2
   displayName: Terraform Init
   inputs:
