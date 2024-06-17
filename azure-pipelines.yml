@@ -26,3 +26,10 @@ steps:
     command: 'plan'
     environmentServiceName: 'azure-cloud-connection'
     allowTelemetryCollection: false
+
+- task: TerraformCLI@2
+  displayName: Terraform Plan
+  inputs:
+    command: 'apply'
+    environmentServiceName: 'azure-cloud-connection'
+    allowTelemetryCollection: true
