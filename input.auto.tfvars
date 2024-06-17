@@ -2,7 +2,7 @@ aks_vnet_name = "aksvnet"
 
 sshkvsecret = "akssshpubkey"
 
-clientidkvsecret = "spn-id"
+clientidkvsecret = "aks-spn"
 
 spnkvsecret = "spn-secret"
 
@@ -12,9 +12,9 @@ subnetcidr = ["10.0.0.0/25"]
 
 keyvault_rg = "aksdemo-rg"
 
-keyvault_name = "aksdemocluster-kv"
+keyvault_name = "kvextakscluster01"
 
-azure_region = "australiaeast"
+azure_region = "uksouth"
 
 resource_group = "aksdemocluster-rg"
 
